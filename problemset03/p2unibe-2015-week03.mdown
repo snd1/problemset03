@@ -1,0 +1,44 @@
+# P2 Course 2015, Week 3 #
+
+3rd Week, please push your solutions by Thursday, March 12, 13:00 o'clock to our server.
+
+## Design by Contract - The Turtle Game
+
+ACME Inc. has decided to make a fun little toy game for kids to learn programming with: the turtle language!
+
+Users write programs out of three commands, telling a turtle how to walk over the screen:
+
+<dl>
+<dt>right <i>n</i>
+ 	<dd>Moves the turtle to the right by <i>n</i> steps. 
+<dt>down <i>n</i>
+	<dd>Moves the turtle down by <i>n</i> steps. 
+<dt>jump <i>x</i>, <i>y</i> 
+	<dd>Moves the turtle to the <i>x</i>, <i>y</i> coordinates on the board (without leaving a trail). 
+</dl>
+
+The turtle can walk really fast, and it's too small to be seen with the naked eye, but it leaves a trace of red squares behind wherever it goes to down or to the right. When jumping the turtle does not leave every any trail.
+
+For example, here is a turtle program and the resulting trace:
+![Turtle trace](turtle-trace.png "Turtle trace")
+
+In your project, you'll find an empty class `BoardMaker`, which accepts the user program and returns a 100 by 100 boolean matrix, marking for every square whether it's been touched by the turtle or not. Also, this class has to provide the initial configuration of the board, in which it should mark the starting position of the turtle. Implement this class, along with any other classes that are necessary.  
+
+Your solution *MUST* meet the following criteria:
+
+ * In your implementation, make sure that parsing and execution of programs happens in separate objects. 
+ * In your API documentation, make explicit all pre- and post- conditions.
+ * Your solution must check at least *some* pre- and post- conditions, using `assert` statements.
+ * Your solution must reasonably deal with all input programs, in exactly the place that your contracts prescribe.
+ * The class comment of all your classes should accurately describe the responsibility of the class.
+ * Include a UML class diagram that communicates the connections between your classes.
+ * Include a UML sequence diagram that shows the message sends that happen in your program when the method `makeBoardFrom` (from class `BoardMaker`) is called.
+ * Both UML diagrams must be hand made (diagrams generated from the source code with a tool, or created using a tool are not accepted)
+
+You *SHOULD*:
+
+ * Make sure that you're using Java 1.7 and that assertions are turned on.
+ * Read "Applying 'Design by contact'" by Bertrand Meyer. It's in the "resources" folder from the repository. Its contents are relevant to the exam.
+
+
+ACME Inc. thanks you for your cooperation to making the world a little funner!
